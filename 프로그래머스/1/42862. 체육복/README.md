@@ -84,3 +84,7 @@
 
 
 > 출처: 프로그래머스 코딩 테스트 연습, https://school.programmers.co.kr/learn/challenges
+
+---
+* 배열이 항상 오름차순 아닐 수 도 있음 -> 정렬
+* 배열에서 이미 사용한 값을 임의 값(-1)로 변경경
