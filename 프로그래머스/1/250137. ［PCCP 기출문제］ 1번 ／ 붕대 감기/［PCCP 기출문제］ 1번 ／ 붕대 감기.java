@@ -1,10 +1,6 @@
 class Solution {
     public int solution(int[] bandage, int health, int[][] attacks) {
-        // 1초에 x
-        // t초 채우면 +y
-        // 최대 체력
-        // 공격 받으면 시간 0
-        // 체력 0이하 종료
+ 
         int t = bandage[0]; // 시전시간  
         int x = bandage[1]; // 초당 회복량
         int y = bandage[2]; // 추가 회복량
@@ -21,7 +17,6 @@ class Solution {
                if(curHealth <= 0)
                    return -1; // 종료
                attackCount++;
-               System.out.println(curHealth);
                continue;
            }
             
@@ -34,8 +29,7 @@ class Solution {
                    bandageCount = 0; // 초기화
                }
                if(curHealth > health) // 최대 체력이면 증가x
-                   curHealth = health;
-              
+                   curHealth = health;   
            }    
             
         }
