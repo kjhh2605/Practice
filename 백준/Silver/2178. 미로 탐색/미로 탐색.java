@@ -46,8 +46,10 @@ public class Main {
                     else {
                         if (visited[x][y])
                             continue;
-                        else
+                        else {
                             q.add(new int[]{x, y});
+                           // visited[x][y] = true;
+                        }
                     }
 
                 }
