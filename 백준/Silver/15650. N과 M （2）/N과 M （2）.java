@@ -13,16 +13,12 @@ public class Main {
 
     public static void search(int depth,int n, int m , int tmp){
         if(depth == m){
-            for(int i = 1; i < array.length ; i++){
-                if(array[i-1] >= array[i])
-                    return;
-            }
             list.add(array.clone());
             return;
         }
         for(int i = tmp ; i <= n ; i++){// 1~n까지 길이m 배열의 각 인덱스에 넣어봄
             array[depth] = i;
-            search(depth+1,n,m,tmp+1);
+            search(depth+1,n,m,i+1);
         }
     }
     public static void main(String[] args) throws IOException {
