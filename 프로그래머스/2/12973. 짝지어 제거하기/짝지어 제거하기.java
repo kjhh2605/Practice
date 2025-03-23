@@ -17,10 +17,7 @@ class Solution
                 }
             }
         }
-        if(stack.size() == 0)
-            return 1;
-        else
-            return 0;
+        return stack.size()==0?1:0;
         
     }
 }
