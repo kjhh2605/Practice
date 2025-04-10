@@ -21,7 +21,7 @@ class Solution {
             parent[i] = i;
         }
         
-        Arrays.sort(costs, (a, b) -> Integer.compare(a[2], b[2]));
+        Arrays.sort(costs, (a, b) -> a[2]-b[2]);
         for(int i = 0 ; i < costs.length ; i++){
             int[] cur = costs[i];
             if(find(parent,cur[0])!=find(parent,cur[1])){
