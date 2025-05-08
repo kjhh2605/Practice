@@ -14,12 +14,12 @@ class Solution {
     public int solution(int[][] land, int height) {
         int answer = 0;
         int len = land.length;
-
-        PriorityQueue<Node> pq = new PriorityQueue<>((a,b)->Integer.compare(a.cost,b.cost));
+        
+        PriorityQueue<Node> pq = new PriorityQueue<>();
         pq.add(new Node(0,0,0));
-
+        
         boolean[][] visited = new boolean[len][len];
-
+        
         while(!pq.isEmpty()){
             Node cur = pq.poll();
             int x = cur.x;
@@ -28,18 +28,18 @@ class Solution {
                 continue;
             visited[y][x] = true;
             answer+=cur.cost;
-
+            
             for(int i = 0; i < 4; i++) {
                 int newX = x + dx[i];
                 int newY = y + dy[i];
                 if(newX < 0 ||  newX >= len || newY < 0 || newY >= len)
                     continue;
                 int cost = Math.abs(land[newY][newX]-land[y][x]);
-                if(cost <= height)
+                if(cost < height)
                     cost = 0;
                 pq.add(new Node(newX,newY,cost));
             }
-
+            
         }
         return answer;
     }

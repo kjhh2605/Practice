@@ -1,6 +1,6 @@
 # [level 4] 지형 이동 - 62050 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/62050?language=java) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/62050) 
 
 ### 성능 요약
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 05월 08일 20:49:55
+2025년 05월 08일 20:50:16
 
 ### 문제 설명
 
