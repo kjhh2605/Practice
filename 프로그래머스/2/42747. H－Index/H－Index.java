@@ -10,7 +10,7 @@ class Solution {
         }
         Arrays.sort(a, Collections.reverseOrder());
         for(int i = 0; i < citations.length; i++){
-            if (a[i] < i + 1) {
+            if (a[i] <= i + 1) {
                 return i;
             }
         }
